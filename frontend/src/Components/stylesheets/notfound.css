@@ -1,0 +1,26 @@
+.not-found {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.not-found h1 {
+    margin-top: 40px;
+    font-size: 3rem;
+    color: #333;
+}
+
+.not-found p {
+    font-size: 1.5rem;
+    color: #666;
+}
+#goback{
+    background: #f1356d;
+    color: #fff;
+    border: 0;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+}
+  

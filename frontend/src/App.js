@@ -7,6 +7,7 @@ import Footer from './Components/footer';
 import NotesList from './Components/NoteList'
 import Addblog from './Components/addblog';
 import BlogDetails from './Components/BlogDetails';
+import Notfound from './Components/Notfound';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
               <Route path="/NotesList"><NotesList/></Route>
               <Route path="/newblog/:password"><Addblog/></Route>
               <Route path="/getnotes/:id"> <BlogDetails/> </Route>
+              <Route path="*"> <Notfound/></Route>
           </Switch>
         </div>
       <Footer/>
