@@ -1,0 +1,86 @@
+.simplenote {
+    font-family: sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+h1{
+    text-align: center;
+}
+.main{
+    text-align: center;
+}
+
+.header {
+    margin-top: 30px;
+    font-size: 50px;
+}
+
+.tagline {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+.signup-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: default;
+    text-decoration: none;
+}
+
+.signup-button:hover{
+    cursor: pointer;
+}
+
+.notes-list {
+    margin-top: 20px;
+}
+.new-note {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.contents {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.features {    
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+}
+
+.feature {
+    width: 400px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature h3,
+.feature p {
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+.feature:hover h3,
+.feature:hover p {
+    cursor:context-menu;
+    color: #007bff;
+}

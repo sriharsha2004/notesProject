@@ -1,0 +1,13 @@
+#addblog,#logoutbtn{
+    background: #f1356d;
+    color: #fff;
+    border: 0;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    float: right;
+}
+#logoutbtn{
+    float: none;
+    margin-bottom: 20px;
+}

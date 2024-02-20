@@ -1,0 +1,66 @@
+/* Addblog.css */
+
+.add-blog-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.add-blog-container h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.add-blog-container .form-group {
+  margin-bottom: 15px;
+}
+
+.add-blog-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.add-blog-container input[type="text"],
+.add-blog-container textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.add-blog-container textarea {
+  height: 150px;
+}
+
+.add-blog-container button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-blog-container button:hover {
+  background-color: #0056b3;
+}
+#dashboard{
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  float: left;
+}
+#link{
+  text-decoration: none;
+}
