@@ -4,6 +4,8 @@ import { useState } from 'react';
 import './stylesheets/notes.css'
 import { useHistory } from 'react-router-dom';
 import Getblogs from './Getblogs';
+import CryptoJS from 'crypto-js';
+
 
 const NotesList = () => {
     const [empty,setempty] = useState(false);
@@ -57,9 +59,16 @@ const NotesList = () => {
         history.push("/newblog/"+encodeURIComponent(password));
     }
 
+    function encryptData(data, secretKey) {
+        return CryptoJS.AES.encrypt(JSON.stringify(data), secretKey).toString();
+    }
+
     var handleLogout = () =>{
         const confirmation = window.confirm("Do you Want to logout ???");
         if(confirmation){
+            // localStorage.setItem("token",false);
+            const data = encryptData("false", "abcd");
+            localStorage.setItem("token", data);
             history.push("/SignIn");
         }else{
             return;

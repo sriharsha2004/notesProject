@@ -114,3 +114,11 @@
 .blog-body{
   margin: 30px 0px;
 }
+
+#showpw{
+  color: white;
+  float: right;
+  position: relative;  
+  bottom: 34px;
+  right: 10px;
+}

@@ -2,12 +2,14 @@ import React from 'react';
 import {useHistory} from 'react-router-dom'
 import  { useState } from 'react'
 import Navbar from './Navbar';
+import { FaEye , FaEyeSlash } from "react-icons/fa";
 
 const SignUp = () => {
     const [username,setusername] = useState();
     const [email,setemail] = useState();
     const [password,setpassword] = useState();
     var [err,seterr] = useState(false);
+    var [showpassword,setshowpassword] = useState(false);
     var [ispending,setispending] = useState(false);
     var [btnstatus,setbtnstatus] = useState(false);
 
@@ -50,7 +52,15 @@ const SignUp = () => {
                 <label>Email Id : </label>
                 <input type="email" required onChange={(e)=>{setemail(e.target.value)}} />
                 <label>Password :</label>
-                <input type="text" required onChange={(e)=>{setpassword(e.target.value)}} />
+                <div>
+                    <input type={showpassword ? "text" : "password"}
+                    required 
+                    onChange={(e)=>setpassword(e.target.value)}                
+                    />
+                    <span onClick={()=> showpassword? setshowpassword(false) : setshowpassword(true)} id='showpw'>
+                    { showpassword? <FaEyeSlash/> : <FaEye />  }
+                     </span>
+                </div>
                 {!btnstatus && <button>SignUp</button>}    
                 {btnstatus && <button disabled> Signing Up ...</button>}          
             </form>

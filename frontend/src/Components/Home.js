@@ -10,9 +10,6 @@ const Home = () => {
             <h1 className='header'>Quicknote</h1>
             <div className="main">
                 <p className="tagline"> Simplify your thoughts with effortless notes. </p>
-                {/* <p className="description">
-                All your notes, synced on all your devices. Get Simplenote now for iOS,
-                Android, Mac, Windows, Linux, or in your browser. </p> */}
                 <p className='description'>
                 Effortless note-taking, endless possibilities.<br/>
                 Streamline your ideas with simple notes.<br/>
